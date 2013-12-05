@@ -1,6 +1,12 @@
 Dbhiv::Application.routes.draw do
-  
+   
   resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create]
+
+  match '/register', to: 'users#new', via: :get
+  match 'login', to: 'sessions#new', via: :get
+  match 'logout', to: 'sessions#destroy', via: :delete
+
   root to: "questions#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
