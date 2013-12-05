@@ -1,0 +1,7 @@
+<%= provide(:title, "DBHIV | Register") %>
+
+<h1>Register</h1>
+
+<%= form_for(@user) do |f|%>
+	<%= render "common/form_errors", object: @user %>
+<% end %>

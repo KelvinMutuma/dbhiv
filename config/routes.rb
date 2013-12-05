@@ -1,5 +1,6 @@
 Dbhiv::Application.routes.draw do
   
+  resources :users, only: [:new, :create]
   root to: "questions#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
