@@ -1,2 +1,9 @@
-<%= provide :title, "DBHIV | Home" %>
-<h1>Questions Home Page</h1>
+<%= provide(:title, "DBHIV | Home" )%>
+<div id="ask">
+<h1>Ask a Question</h1>
+	<% if logged_in? %>
+		<%= render 'question_form' %>
+	<% else %>
+		<p>Please login to ask or answer questions</p>
+	<% end %>
+</div><!-- end ask -->
