@@ -1,3 +1,3 @@
 <li>
-	<%= answer.body %> - by <%= answer.user.username.capitalize %>
+	<%= answer.body %> - by <span class= "username"><%= answer.user.username.capitalize %></span> - <%= time_ago_in_words(answer.created_at) %> ago
 </li>

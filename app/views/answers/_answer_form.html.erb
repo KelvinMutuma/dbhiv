@@ -3,7 +3,7 @@
 
 	<p>
 		<%= f.label :body, "Answer" %>
-		<%= f.text_field :body %>
-		<%= f.submit "Post Answer" %>
+		<%= f.text_area :body %>
+		<%= f.button "Post Answer", class: "btn btn-success" %>
 	</p>
 <% end %>

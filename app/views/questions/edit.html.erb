@@ -7,16 +7,17 @@
 	<%= render 'common/form_errors', object: @question %>
 
 	<p>
-		<%= f.label :body %><br >
+		<%= f.label :body, "Your question:" %><br >
 		<%= f.text_field :body %>
 	</p>
 
 	<p>
-		<%= f.label :solved %>	
-		<%= f.check_box :solved %>
+		<%= f.check_box :solved , class: "checkbox"%>
+		<%= f.label :solved , "Click here if your question has been solved", class: "checkbox"%>	
+		
 	</p>
 	
 	<p>
-		<%= f.submit "Update" %>
+		<%= f.button "Update", class: "btn btn-success" %>
 	</p>
 <% end %>

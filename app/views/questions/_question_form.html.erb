@@ -2,7 +2,7 @@
 	<%= render "common/form_errors", object: @question %>
 	<p>
 		<%= f.label :body, "Question" %><br >
-		<%= f.text_field :body %> 
-		<%= f.submit "Ask a question" %> 
+		<%= f.text_area :body, placeholder: "Ask your question here..." %> 
+		<%= f.button "Ask a question", class: "btn btn-primary" %> 
 	</p>
 <% end %>

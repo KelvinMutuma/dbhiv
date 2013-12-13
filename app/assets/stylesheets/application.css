@@ -11,3 +11,21 @@
  *= require_self
  *= require_tree .
  */
+
+
+
+.checkbox{
+	color: blue;
+	display: inline;
+}
+.social{
+	display: inline;
+
+}
+.social-buttons{
+	text-align: left;
+	list-style: none;
+}
+.navbarcontent{
+	float:right;
+}
