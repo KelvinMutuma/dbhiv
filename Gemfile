@@ -7,7 +7,7 @@ gem 'will_paginate'
 gem 'bcrypt-ruby'
 gem 'ckeditor_rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 
 # Use SCSS for stylesheets
 gem 'less-rails'
@@ -26,6 +26,14 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+group :development, :test do 
+  gem 'sqlite3'
+end
+
+gem :production do
+	gem 'pg'
+end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
